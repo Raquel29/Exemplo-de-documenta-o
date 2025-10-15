@@ -1,80 +1,82 @@
-**<h1>Challenge de BI - 3ª e 4ª Semana - Alura</h1>**
+**<h1>Documentação</h1>**
 <br>
-<h2>Dashboard Financeiro</h2>
-<p>A pessoa que gerencia o financeiro da Alura Store disponibilizou para a gente o banco de dados do financeiro, para fazermos nossas análises e verificarmos quais os lucros e os gastos da empresa e ajudá-los a tomarem decisões com base nas análises.</p>
+<h2>Dashboard Análise de Tedência</h2>
+<p> O Objetivo é prever a tendicia futura de ligações recebidas</p>
 <br>
 <h2>Base de Dados</h2>
-<p>A base de dados consiste em um banco de dados no MySQL com a seguinte estrutura:</p>
+<p>A base de dados utilizada foi a de ligações pertecente ao fluxo de dados **CSC_TELEFONIA_GATEWAY**</p>
 
-<p><b>Tabela Pedidos</b></p>
+<p><b>Tabela Geral</b></p>
 <ul>
-<li>Data da compra
-<li>ID pedido
-<li>ID produto
-<li>Quantidade
+<li>Asterisk ID
+<li> Fila
+<li> Atendida por 
+<li> Originador 
+<li> Desconexão
 </ul>
 
-<p><b>Tabela Produtos</b></p>
+<p><b>Tabela PF</b></p>
 <ul>
-<li>ID produto
-<li>Categoria produto
-<li>Preço
-<li>Custos
+<li>Chamadas_Historico
+<li>Chamadas_Previtas 
+<li>Data
+<li>Limite_Inferior
+<li>Limite_Superior
 </ul>
 
-<p><b>Tabela Vendedores</b></p>
+<p><b>Tabela SACI</b></p>
 <ul>
-<li>ID vendedor
-<li>Vendedor
+<li>Chamadas_Historico
+<li>Chamadas_Previtas 
+<li>Data
+<li>Limite_Inferior
+<li>Limite_Superior
 </ul>
 
-<p><b>Tabela Notas Fiscais</b></p>
+<p><b>Tabela SEMOB</b></p>
 <ul>
-<li>ID nota
-<li>ID pedido
-<li>ID vendedor
-<li>ID pedido
-<li>Imposto
-<li>Valor venda
-<li>Número da nota
-<li>Frete
+<li>Chamadas_Historico
+<li>Chamadas_Previtas 
+<li>Data
+<li>Limite_Inferior
+<li>Limite_Superior
 </ul>
 
-<br>
 
 <h1>Ferramentas Utilizadas no Projeto</h1>
-<p>Foi utilizado o Power BI para o desenvolvimento do Dashboard e o Adobe Color para tornar o dashboard acessível a pessoas que possuem daltonismo</p>
+<p>Foi utilizado o Power BI para o desenvolvimento do Dashboard </p>
 
 <br>
 
 <h1>Tratamento dos Dados</h1>
-<p><b>Tabela Pedidos</b></p>
+
+<p><b>Tabela PF</b></p>
 <ul>
-<li>Alteração na tipagem dos dados, colocado a tipagem correta
+<li>Remoção de colunas não necessarias
+<li>Colunas renomeadas
+<li>Execução de um script em python para a previsão 
+<li>Expansão da tabela resultado
+<li>Alteração na tipagem dos dados, colocado a tipagem correta  
 </ul>
 
-<p><b>Tabela Produtos</b></p>
+<p><b>Tabela SEMOB</b></p>
 <ul>
-<li>Alteração na tipagem dos dados, colocado a tipagem correta
-<li>Remoção do Underscore
-<li>Primeira letra de cada palavra maiúscula na coluna 'categoria'
-<li>Ajuste dos valores das colunas 'preço' e 'custos'
+<li>Remoção de colunas não necessarias
+<li>Colunas renomeadas
+<li>Execução de um script em python para a previsão 
+<li>Expansão da tabela resultado
+<li>Alteração na tipagem dos dados, colocado a tipagem correta  
 </ul>
 
-<p><b>Tabela Vendedores</b></p>
+<p><b>Tabela SACI</b></p>
 <ul>
-<li>Alteração na tipagem dos dados, colocado a tipagem correta
-<li>Ajuste dos nomes dos vendedores
+<li>Remoção de colunas não necessarias
+<li>Colunas renomeadas
+<li>Execução de um script em python para a previsão 
+<li>Expansão da tabela resultado
+<li>Alteração na tipagem dos dados, colocado a tipagem correta  
 </ul>
 
-<p><b>Tabela Notas Fiscais</b></p>
-<ul>
-<li>Alteração na tipagem dos dados, colocado a tipagem correta
-<li>Ajuste dos valores das colunas 'imposto', 'valor venda' e 'frete'
-<li>Ajuste de vendedores repetidos na coluna 'id_vendedor'
-</ul>
-
-<br>
 
 <h1>Métricas</h1>
 <ul>
