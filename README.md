@@ -42,6 +42,15 @@
 <li>Limite_Superior
 </ul>
 
+<p><b>Tabela DER
+</b></p>
+<ul>
+<li>Chamadas_Historico
+<li>Chamadas_Previtas 
+<li>Data
+<li>Limite_Inferior
+<li>Limite_Superior
+</ul>
 
 <h1>Ferramentas Utilizadas no Projeto</h1>
 <p>Foi utilizado o Power BI para o desenvolvimento do Dashboard </p>
@@ -77,6 +86,14 @@
 <li>Alteração na tipagem dos dados, colocado a tipagem correta  
 </ul>
 
+<p><b>Tabela DER</b></p>
+<ul>
+<li>Remoção de colunas não necessarias
+<li>Colunas renomeadas
+<li>Execução de um script em python para a previsão 
+<li>Expansão da tabela resultado
+<li>Alteração na tipagem dos dados, colocado a tipagem correta  
+</ul>
 
 <h1>Métricas</h1>
 <ul>
